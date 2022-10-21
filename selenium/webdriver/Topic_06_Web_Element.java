@@ -65,7 +65,9 @@ public class Topic_06_Web_Element {
 		
 		//GUI: font/size/color/ location
 		element.getCssValue("background-color");
-		//#248ece
+		//#248ece tese
+		
+		
 	}
 
 	@AfterClass
