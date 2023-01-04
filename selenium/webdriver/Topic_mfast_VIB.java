@@ -31,7 +31,7 @@ public class Topic_mfast_VIB {
 	@Test 
 	public void TC_01_WebElement_cashback() {
 		driver.get("https://bsh-rc.mfast.vn/vib_2in1?type=cashback&code=039596&oto=1");
-		// Tương tác được với Element thì cần tìm được element đó test VIB nè
+		// Tương tác được với Element thì cần tìm được element đó test VIB nè.
 		// Thông qua các locator của nó
 
 		// 2. Type 'Nguyễn Thị Ngọc Thảo @' in 'fullName'
