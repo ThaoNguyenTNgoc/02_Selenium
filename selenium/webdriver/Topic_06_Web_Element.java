@@ -101,7 +101,7 @@ public class Topic_06_Web_Element {
 		
 		//Lấy text từ Error message / success message/label/header/..
 		element.getText(); 
-		//Please enter your email 
+		//Please enter your email.
 	}
 
 	@AfterClass
