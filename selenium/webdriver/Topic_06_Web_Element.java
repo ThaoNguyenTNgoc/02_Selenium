@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -102,6 +103,32 @@ public class Topic_06_Web_Element {
 		//Lấy text từ Error message / success message/label/header/..
 		element.getText(); 
 		//Please enter your email.
+		
+		//Khi nào dùng getText - getAttribute
+		//Khi cái nào value mình cần lấy nó nằm bên ngoài => get text
+		// KHi nào value cần lấy nằm bên trong thẻ => get Attribute
+		
+		//Dùng để verify xem 1 element hiển thị hoặc không 
+		//Phạm vi: Tất cả các element
+		Assert.assertTrue(element.isDisplayed());
+		Assert.assertFalse(element.isDisplayed());
+		
+		//Dùng để verify xem 1 element có thao tác được hoặc không 
+		//Phạm vi: Tất cả các element
+		Assert.assertFalse(element.isEnabled());
+		Assert.assertTrue(element.isEnabled());
+
+		//Dùng để verify xem 1 element có được chọn hoặc không 
+		//Phạm vi:checkbox/radio button
+		Assert.assertFalse(element.isSelected());
+		Assert.assertTrue(element.isSelected());
+		
+		
+		//Các element nằm trong thẻ form
+		//Tương ứng với hành vi enduser enter
+		element.submit();
+		
+		
 	}
 
 	@AfterClass
