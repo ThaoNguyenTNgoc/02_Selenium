@@ -63,11 +63,11 @@ public class Topic_06_Web_Element_p2 {
 	
 	if (driver.findElement(ageUnder18Radio).isDisplayed()) {
 		driver.findElement(ageUnder18Radio).click();
-		System.out.println("ageUnder18Radio is display"+"Tharo");
+		System.out.println("ageUnder18Radio is display"+"ageUnder18Radio");
 		sleepInSecond(3);
 		
 	} else {
-		System.out.println("ageUnder18Radio is not display"+"Tharo");
+		System.out.println("ageUnder18Radio is not display"+"ageUnder18Radio");
 
 	}
 	
