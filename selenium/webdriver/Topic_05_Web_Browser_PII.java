@@ -1,7 +1,6 @@
 package webdriver;
 //import java.util.concurrent.TimeUnit;
 
-import java.awt.Point;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -75,8 +74,7 @@ public class Topic_05_Web_Browser_PII {
 		//search element
 		 driver.findElement(By.cssSelector("div.header-links a.ico-login")).click();
 	
-		String searchAtribute= element.getAttribute("placeholder"); //**
-		String emailTextboxAttributr= element.getAttribute("value");
+
 
 		//Search store
 		
